@@ -51,11 +51,11 @@ class TreeCommand : CliktCommand(
         }
 
         val stats = TreeStats()
-        echo("📂 ${rootDir.absolutePath}")
+        echo("${rootDir.absolutePath}")
         displayTree(rootDir, "", maxDepth ?: Int.MAX_VALUE, 0, stats)
 
         if (showStats) {
-            echo("\n📊 Statistiques:")
+            echo("\nStatistiques:")
             echo("   Répertoires: ${stats.directories}")
             echo("   Fichiers: ${stats.files}")
             echo("   Total: ${stats.directories + stats.files}")
@@ -84,16 +84,8 @@ class TreeCommand : CliktCommand(
         files.forEachIndexed { index, file ->
             val isLast = index == files.lastIndex
             val connector = if (isLast) "└── " else "├── "
-            val fileIcon = when {
-                file.isDirectory -> "📁"
-                file.extension in listOf("kt", "java") -> "☕"
-                file.extension in listOf("js", "ts", "vue") -> "🟨"
-                file.extension in listOf("md", "txt") -> "📝"
-                file.extension in listOf("json", "yml", "yaml") -> "⚙️"
-                else -> "📄"
-            }
 
-            echo("$prefix$connector $fileIcon ${file.name}")
+            echo("$prefix$connector${file.name}")
 
             if (file.isDirectory) {
                 stats.directories++
