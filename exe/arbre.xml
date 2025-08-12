@@ -25,11 +25,11 @@
     <maxVersion></maxVersion>
   </jre>
   <versionInfo>
-    <fileVersion>1.0.0.0</fileVersion>
+    <fileVersion>2.0.0.0</fileVersion>
     <txtFileVersion>free</txtFileVersion>
     <fileDescription>Affiche l&apos;arborescence d&apos;un répertoire</fileDescription>
     <copyright>François SP</copyright>
-    <productVersion>1.0.0.0</productVersion>
+    <productVersion>2.0.0.0</productVersion>
     <txtProductVersion>free</txtProductVersion>
     <productName>Arbre</productName>
     <companyName>François SP</companyName>
