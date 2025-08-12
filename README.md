@@ -2,8 +2,7 @@
 
 Un outil pour les CLI qui affiche la structure des répertoires et fichiers de manière arborescente.
 
-<img width="235" height="201" alt="image" src="https://github.com/user-attachments/assets/f3d4f1c6-c269-4e72-ab9a-41b088c38728" />
-
+<img width="225" height="162" alt="image" src="https://github.com/user-attachments/assets/ca1fb655-2b81-454c-9174-bd4c85d20818" />
 
 # Installation
 
