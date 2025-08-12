@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version "2.1.21"
     id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("org.graalvm.buildtools.native") version "0.9.28"
 }
 
 group = "org.fsp"
@@ -17,6 +18,22 @@ dependencies {
 
 kotlin {
     jvmToolchain(21)
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+        vendor.set(JvmVendorSpec.GRAAL_VM)
+    }
+}
+
+graalvmNative {
+    binaries {
+        named("main") {
+            imageName.set("arbre")
+            mainClass.set("ArbreCliKt") // Corrigé : était "TreeCliKt"
+        }
+    }
 }
 
 tasks.shadowJar {

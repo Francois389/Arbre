@@ -9,7 +9,7 @@ import java.io.File
 data class TreeStats(var directories: Int = 0, var files: Int = 0)
 
 class TreeCommand : CliktCommand(
-    name = "tree",
+    name = "arbre",
     help = "Affiche l'arborescence d'un répertoire"
 ) {
     private val path by argument(

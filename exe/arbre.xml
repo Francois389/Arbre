@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>console</headerType>
+  <jar>E:\projet\Arbre\build\libs\arbre.jar</jar>
+  <outfile>E:\projet\Arbre\exe\arbre.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon></icon>
+  <classPath>
+    <mainClass>ArbreCliKt</mainClass>
+  </classPath>
+  <jre>
+    <path>%JAVA_HOME%;%PATH%</path>
+    <requiresJdk>false</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>free</txtFileVersion>
+    <fileDescription>Affiche l&apos;arborescence d&apos;un répertoire</fileDescription>
+    <copyright>François SP</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>free</txtProductVersion>
+    <productName>Arbre</productName>
+    <companyName>François SP</companyName>
+    <internalName>Arbre</internalName>
+    <originalFilename>Arbre.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>FRENCH</language>
+  </versionInfo>
+</launch4jConfig>
