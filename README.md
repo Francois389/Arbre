@@ -6,9 +6,21 @@ Un outil pour les CLI qui affiche la structure des répertoires et fichiers de m
 
 # Installation
 
-Télécharger le `.exe` depuis la [page des releases](https://github.com/Francois389/Arbre/releases/), puis copier le `.exe` dans un dossier, et ajoutez le chemin du dossier dans le PATH.
+Télécharger l'installeur depuis la [page des releases](https://github.com/Francois389/Arbre/releases/), puis executer le.
 
 # Utilisation
+
+Pour afficher l'arborescence d'un dossier :
+
+```bash
+arbre dossier
+```
+
+Pour restreindre à 3 niveau de profondeur :
+
+```bash
+arbre -d 3
+```
 
 Afficher l'aide avec la commande suivante :
 
