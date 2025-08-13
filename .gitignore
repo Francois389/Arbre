@@ -15,6 +15,7 @@ build/
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+.idea/copilotDiffState.xml
 
 ### Kotlin ###
 .kotlin
@@ -43,6 +44,5 @@ bin/
 
 ### Mac OS ###
 .DS_Store
-exe/arbre.exe
 
-.idea/copilotDiffState.xml
+*.exe
